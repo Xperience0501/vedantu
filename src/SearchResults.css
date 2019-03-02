@@ -1,0 +1,64 @@
+.mainDiv {
+    display: flex;
+    
+}
+.subDivs {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+    width: 30%;
+    display: inline-flex;
+}
+
+.blueBtn {
+    color: black;
+    background-color: #1AF;
+    padding: 15px;
+}
+
+.desc {
+    padding: 2em 2em;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+    text-align: left;
+}
+.linkLook {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.spancss {
+    border: 1px solid #666;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 3px 9px;
+    font-size: 13px;
+    color: #666;
+}
+
+.roundImage {
+    margin-top: 1em;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 900px) {
+    .subDivs {
+      width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .subDivs {
+      width: 90%;
+    }
+    .spancss {
+        display: block;
+    }
+}

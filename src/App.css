@@ -1,33 +1,66 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.commonDiv {
+  border: 1px solid #1AF;
+  border-radius: 3px;
+  margin: 20px 10%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.titleDiv {
   color: white;
+  background-color: #1AF;
+  padding: 15px;
+  text-align: left;
 }
-
-.App-link {
-  color: #61dafb;
+.content {
+  padding: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content input {
+  border-radius: 5px;
+  height: 40px;
+  box-shadow: none;
+  outline: none;
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 20px;
+  border: 0;
+}
+.content button {
+  background-color: #1AF;
+  border-radius: 5px;
+  padding: 0 2em;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: 0;
+}
+.contentLeft {
+  display: flex;
+  width: 100%;
+}
+.btnPointer {
+  cursor: pointer;
+}
+.content button:hover {
+  background-color: #19F;
+}
+@media screen and (max-width: 650px) {
+  .commonDiv {
+    margin: 20px 4%;
   }
-  to {
-    transform: rotate(360deg);
+  .titleDiv {
+    text-align: center;
+  }
+  .contentLeft {
+    width: 90%;
+    flex-direction: column;
+  }
+  .inputBox {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  .content button {
+    padding: 15px 2em;
   }
 }
